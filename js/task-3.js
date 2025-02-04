@@ -20,7 +20,7 @@ const output = document.querySelector("#name-output");
 
 formInput.addEventListener("input", (evt) => {
     const userName = evt.currentTarget.value.trim();
-    if (userName == "" || userName.startsWith(" ")) {
+    if (userName == "") {
         output.textContent = "Anonymous";
     } else {
         output.textContent = userName;

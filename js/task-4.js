@@ -15,21 +15,18 @@
 const form = document.querySelector(".login-form");
 
 form.addEventListener("submit", evt => {
-
     evt.preventDefault();
-
-    let user = {};
-
+    
+    const user = {};
     const email = evt.target.elements.email.value;
     const pass = evt.target.elements.password.value;
+
     if (email === "" || pass === "") {
         return alert("All form fields must be filled in");
     } else {
         user.email = email.trim();
         user.pasword = pass.trim();
     }
-
     console.log(user);
-
     form.reset();
 })
