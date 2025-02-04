@@ -11,7 +11,6 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
-  max-width: 1128px;
 }
 
 .gallery {
@@ -20,6 +19,7 @@ body {
   column-gap: 24px;
   row-gap: 48px;
   list-style: none;
+  max-width: 1128px;
 }
 
 .gallery-item {
@@ -30,4 +30,42 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  max-width: 100px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
