@@ -32,16 +32,16 @@ function getRandomHexColor() {
 }
 
 function createBoxes(amount) {
-  let markup = [];
+  let markup = document.createDocumentFragment();
 
   for (let index = 0; index < amount; index++) {
     const box = document.createElement("div");
     box.style.backgroundColor = getRandomHexColor();
-    box.style.width = `${30 + index * 10}px`;
-    box.style.height = `${30 + index * 10}px`;
-    markup.push(box);
+    const boxSize = 30 + index * 10;
+    box.style.cssText = `background-color: ${getRandomHexColor()}; width: ${boxSize}px; height: ${boxSize}px;`;
+    markup.appendChild(box);
   }
-  boxes.append(...markup);
+  boxes.appendChild(markup);
 }
 
 createBttn.addEventListener('click', () => {
